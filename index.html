@@ -110,6 +110,21 @@
   .header-cred::before{
     content:""; width:18px; height:1px; background:var(--gold);
   }
+  .header-right{
+    display:flex; align-items:center; gap:16px;
+  }
+  .header-social{
+    display:inline-flex; align-items:center; gap:10px;
+  }
+  .header-social a{
+    display:inline-flex; align-items:center; justify-content:center;
+    color:var(--gold-soft); transition:color .2s ease, transform .2s ease;
+  }
+  .header-social a:hover{
+    color:#ffffff;
+    transform:translateY(-1px);
+  }
+  .header-social svg{ display:block; }
   .nav{
     display:flex; align-items:center; justify-content:space-between;
     padding:16px 40px;
@@ -912,6 +927,23 @@
     display:inline-flex; align-items:center; gap:8px; color:var(--gold-soft); font-size:12.5px;
   }
   .footer-cert-line svg{ flex-shrink:0; }
+  .footer-social{
+    display:flex; align-items:center; gap:10px; margin-top:18px;
+  }
+  .footer-social a{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:36px; height:36px; border-radius:50%;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(227,198,132,0.28);
+    color:var(--gold-soft);
+    transition:background .2s ease, color .2s ease, transform .2s ease, border-color .2s ease;
+  }
+  .footer-social a:hover{
+    background:var(--gold);
+    color:var(--navy-deep);
+    border-color:var(--gold);
+    transform:translateY(-2px);
+  }
 
   /* ---------- certificate modal ---------- */
   .cert-modal-backdrop{
@@ -1064,10 +1096,11 @@
     .gallery-grid{ grid-template-columns:1fr 1fr; min-height:auto; }
     .gallery-grid figure:first-child{ grid-row:auto; min-height:280px; }
     .form-row{ grid-template-columns:1fr; }
+    .footer-grid{ grid-template-columns:1fr 1fr; gap:32px; }
     .wrap, .nav, .hero-inner, .stats-grid, .badges-row{ padding-left:24px; padding-right:24px; }
   }
   @media (max-width:560px){
-    .badges-row, .stats-grid, .why-grid, .comp-grid, .steps, .gallery-grid, .sector-grid, .paths-grid, .team-grid{ grid-template-columns:1fr; }
+    .badges-row, .stats-grid, .why-grid, .comp-grid, .steps, .gallery-grid, .sector-grid, .paths-grid, .team-grid, .footer-grid{ grid-template-columns:1fr; }
   }
 </style>
 </head>
@@ -1089,7 +1122,17 @@
         <span class="header-sep header-hide-sm" aria-hidden="true"></span>
         <span class="header-hide-sm">Khatima · Uttarakhand</span>
       </div>
-      <div class="header-cred">MEA · PGE licensed recruitment desk</div>
+      <div class="header-right">
+        <div class="header-cred">MEA · PGE licensed recruitment desk</div>
+        <div class="header-social">
+          <a href="https://www.linkedin.com/company/ishtha-global/" target="_blank" rel="noopener" aria-label="LinkedIn" title="Ishtha Global on LinkedIn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.instagram.com/ishthaoverseasofficial/" target="_blank" rel="noopener" aria-label="Instagram" title="Ishtha Overseas on Instagram">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="nav">
@@ -1885,6 +1928,14 @@
               <div><b>Email</b><a href="mailto:info@ishthaoverseas.in">info@ishthaoverseas.in</a></div>
             </li>
             <li>
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+              <div><b>LinkedIn</b><a href="https://www.linkedin.com/company/ishtha-global/" target="_blank" rel="noopener">Ishtha Global</a></div>
+            </li>
+            <li>
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+              <div><b>Instagram</b><a href="https://www.instagram.com/ishthaoverseasofficial/" target="_blank" rel="noopener">@ishthaoverseasofficial</a></div>
+            </li>
+            <li>
               <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg></span>
               <div><b>Hours</b>Monday–Saturday, 10:00–19:00 IST</div>
             </li>
@@ -2017,7 +2068,20 @@
           <li><a href="mailto:info@ishthaoverseas.in">info@ishthaoverseas.in</a></li>
           <li><a href="tel:+916396794303">+91 63967 94303</a></li>
           <li><a href="https://wa.me/916396794303" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.linkedin.com/company/ishtha-global/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/ishthaoverseasofficial/" target="_blank" rel="noopener">Instagram</a></li>
         </ul>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/ishtha-global/" target="_blank" rel="noopener" aria-label="LinkedIn" title="Ishtha Global on LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.instagram.com/ishthaoverseasofficial/" target="_blank" rel="noopener" aria-label="Instagram" title="Ishtha Overseas on Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/916396794303" target="_blank" rel="noopener" aria-label="WhatsApp" title="Chat on WhatsApp">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.53 3.69-8.21 8.24-8.21 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c-.01 4.54-3.7 8.2-8.22 8.2zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14 0-.31-.01-.47-.01s-.43.06-.66.31c-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
