@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ishtha Overseas — Trusted Partner in International Recruitment &amp; Training</title>
+<meta name="description" content="Ishtha Overseas is an India-based overseas recruitment desk placing skilled and hospitality professionals with employers across the Gulf, Middle East and beyond — licensed, ethical and end-to-end.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<style>
+  :root{
+    --navy-deep:   #0c1f38;
+    --navy:        #14304f;
+    --navy-soft:   #1e3f63;
+    --gold:        #b6903f;
+    --gold-soft:   #e3c684;
+    --ivory:       #f6f3ec;
+    --ivory-dim:   #ece7da;
+    --ink:         #182233;
+    --slate:       #5c6472;
+    --line:        rgba(12,31,56,0.12);
+    --white:       #ffffff;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Poppins', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Poppins', sans-serif;
+    font-weight:600;
+    letter-spacing:-0.025em;
+    line-height:1.18;
+    margin:0;
+    color:var(--navy-deep);
+  }
+  p{ margin:0; }
+  a{ color:inherit; text-decoration:none; }
+  img{ max-width:100%; display:block; }
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 40px;
+  }
+  section{ position:relative; }
+  ::selection{ background:var(--gold-soft); color:var(--navy-deep); }
+  :focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+
+  /* premium icon base */
+  .p-icon{
+    display:inline-flex; align-items:center; justify-content:center;
+    flex-shrink:0; position:relative;
+  }
+  .p-icon svg{ display:block; }
+
+  /* ---------- header ---------- */
+  .site-header{
+    position:sticky; top:0; z-index:50;
+    background:var(--navy-deep);
+    color:var(--ivory);
+    border-bottom:1px solid rgba(227,198,132,0.28);
+    box-shadow:0 1px 0 rgba(227,198,132,0.08);
+    transition:box-shadow .3s ease, background .3s ease;
+  }
+  .site-header::before{
+    content:""; display:block; height:2px;
+    background:linear-gradient(90deg, transparent 0%, var(--gold) 18%, var(--gold-soft) 50%, var(--gold) 82%, transparent 100%);
+  }
+  .site-header.is-scrolled{
+    background:rgba(12,31,56,0.96);
+    backdrop-filter:blur(16px);
+    box-shadow:0 18px 40px rgba(8,16,28,0.28);
+    border-bottom-color:rgba(227,198,132,0.4);
+  }
+  .header-top{
+    background:linear-gradient(90deg, #0a192e 0%, #14304f 50%, #0a192e 100%);
+    border-bottom:1px solid rgba(227,198,132,0.22);
+  }
+  .header-top-inner{
+    max-width:1180px; margin:0 auto; padding:8px 40px;
+    display:flex; align-items:center; justify-content:space-between; gap:24px;
+    font-size:11.5px; letter-spacing:0.08em; font-weight:500;
+    color:#c3cddd;
+  }
+  .header-meta{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .header-meta a{
+    display:inline-flex; align-items:center; gap:8px;
+    color:#d7deea; transition:color .2s ease;
+  }
+  .header-meta a:hover{ color:var(--gold-soft); }
+  .header-meta svg{ flex-shrink:0; }
+  .header-sep{
+    width:1px; height:11px; background:rgba(227,198,132,0.4);
+    display:inline-block;
+  }
+  .header-cred{
+    display:inline-flex; align-items:center; gap:8px;
+    color:var(--gold-soft); text-transform:uppercase; letter-spacing:0.16em;
+    font-size:10.5px; white-space:nowrap;
+  }
+  .header-cred::before{
+    content:""; width:18px; height:1px; background:var(--gold);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 40px;
+    max-width:1180px; margin:0 auto;
+    gap:32px;
+  }
+  .brand{
+    display:flex; align-items:center;
+    min-width:0; flex-shrink:0;
+    background:var(--navy-deep);
+  }
+  .brand img{
+    height:72px; width:auto; display:block;
+  }
+  .nav-links{
+    display:flex; gap:30px; align-items:center;
+    font-size:11.5px; font-weight:500;
+    letter-spacing:0.14em; text-transform:uppercase;
+  }
+  .nav-links a{
+    color:rgba(246,243,236,0.82); position:relative; padding:8px 0;
+    transition:color .2s ease;
+  }
+  .nav-links a:hover{ color:var(--gold-soft); }
+  .nav-links a::after{
+    content:""; position:absolute; left:0; right:0; bottom:4px; height:1px;
+    background:var(--gold-soft); transform:scaleX(0); transform-origin:center;
+    transition:transform .28s ease;
+  }
+  .nav-links a:hover::after{ transform:scaleX(1); }
+  .nav-cta{
+    background:var(--gold) !important; color:var(--navy-deep) !important;
+    padding:12px 22px !important; font-size:11px !important; font-weight:600;
+    letter-spacing:0.16em; border-radius:1px;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.18);
+    transition:background .2s ease, transform .2s ease;
+  }
+  .nav-cta::after{ display:none !important; }
+  .nav-cta:hover{ background:var(--gold-soft) !important; color:var(--navy-deep) !important; }
+  .nav-toggle{
+    display:none; background:none; border:1px solid rgba(227,198,132,0.45);
+    width:42px; height:42px; border-radius:50%; cursor:pointer;
+    align-items:center; justify-content:center; padding:0;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:var(--navy-deep);
+    color:var(--ivory);
+    overflow:hidden;
+    padding:108px 0 0;
+    position:relative;
+  }
+  .hero-bg{
+    position:absolute; inset:0;
+    background:
+      linear-gradient(105deg, rgba(12,31,56,0.94) 38%, rgba(12,31,56,0.55) 100%),
+      url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+  }
+  .hero-inner{
+    position:relative; z-index:1;
+    max-width:1180px; margin:0 auto; padding:0 40px 88px;
+    display:grid; grid-template-columns:1.15fr 0.85fr; gap:60px;
+    align-items:end;
+  }
+  .hero-eyebrow{
+    font-size:13px; color:var(--gold-soft); max-width:420px;
+    margin-bottom:26px; line-height:1.55; letter-spacing:0.08em;
+    text-transform:uppercase; font-weight:500;
+  }
+  .hero h1{
+    font-size:clamp(36px, 5vw, 58px);
+    color:var(--white);
+    max-width:16ch;
+    font-weight:600;
+  }
+  .hero-sub{
+    margin-top:26px; max-width:48ch;
+    font-size:16.5px; color:#c8d2e0; font-weight:400;
+  }
+  .hero-actions{ display:flex; gap:16px; margin-top:38px; flex-wrap:wrap; }
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:14px 26px; font-size:14px; font-weight:600;
+    border-radius:2px; border:1px solid transparent; cursor:pointer;
+  }
+  .btn-gold{ background:var(--gold); color:var(--navy-deep); }
+  .btn-gold:hover{ background:var(--gold-soft); }
+  .btn-outline{ border-color:rgba(246,243,236,0.4); color:var(--ivory); }
+  .btn-outline:hover{ border-color:var(--ivory); }
+
+  .hero-panel{
+    border-left:1px solid rgba(246,243,236,0.18);
+    padding-left:44px;
+  }
+  .hero-panel-label{
+    font-size:12px; color:#93a2b8; margin-bottom:18px;
+    letter-spacing:0.1em; text-transform:uppercase; font-weight:500;
+  }
+  .route-line{ width:100%; height:auto; opacity:0.9; }
+
+  /* credentials strip */
+  .badges{
+    background:var(--ivory-dim);
+    border-bottom:1px solid var(--line);
+  }
+  .badges-row{
+    max-width:1180px; margin:0 auto; padding:28px 40px;
+    display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
+  }
+  .badge{
+    display:flex; align-items:center; gap:14px;
+    font-size:13.5px; color:var(--navy);
+  }
+  .badge .p-icon{
+    width:48px; height:48px; border-radius:50%;
+    background:var(--navy-deep);
+    box-shadow:0 0 0 1px rgba(182,144,63,0.35), inset 0 0 0 4px rgba(227,198,132,0.08);
+  }
+  .badge .p-icon svg{ width:22px; height:22px; }
+  .badge b{ display:block; color:var(--navy-deep); font-size:13.5px; font-weight:600; }
+  .badge span{ color:var(--slate); font-size:12px; }
+
+  /* stats */
+  .stats{
+    background:var(--navy);
+    color:var(--ivory);
+  }
+  .stats-grid{
+    max-width:1180px; margin:0 auto; padding:0 40px;
+    display:grid; grid-template-columns:repeat(6,1fr);
+  }
+  .stat{
+    padding:36px 16px; border-left:1px solid rgba(246,243,236,0.14);
+  }
+  .stat:first-child{ border-left:none; padding-left:0; }
+  .stat b{
+    display:block; font-family:'Poppins', sans-serif; font-weight:600;
+    font-size:30px; color:var(--gold-soft); letter-spacing:-0.03em;
+  }
+  .stat span{ font-size:13px; color:#aab6c8; }
+
+  /* ---------- section headings ---------- */
+  .section-head{
+    display:grid; grid-template-columns:1fr 1fr; gap:60px;
+    align-items:end; margin-bottom:56px;
+  }
+  .section-head h2{ font-size:clamp(28px,3.4vw,40px); max-width:16ch; }
+  .section-head p{ color:var(--slate); font-size:16px; max-width:46ch; }
+  .kicker{
+    display:inline-block; color:var(--gold);
+    margin-bottom:14px; font-size:12px; font-weight:500;
+    letter-spacing:0.14em; text-transform:uppercase;
+  }
+
+  /* ---------- about ---------- */
+  .about{ padding:120px 0; }
+  .about-grid{
+    display:grid; grid-template-columns:0.9fr 1.1fr; gap:70px; align-items:center;
+  }
+  .about-frame{
+    position:relative; aspect-ratio:4/5; background:var(--navy-deep);
+    overflow:hidden;
+  }
+  .about-frame img{ width:100%; height:100%; object-fit:cover; opacity:0.92; }
+  .about-frame::after{
+    content:""; position:absolute; inset:18px; border:1px solid rgba(246,243,236,0.4);
+    pointer-events:none;
+  }
+  .about-copy p{ color:var(--slate); font-size:16px; margin-bottom:20px; }
+  .about-copy p:last-of-type{ margin-bottom:0; }
+  .about-list{
+    list-style:none; padding:0; margin:32px 0 0; display:grid; gap:14px;
+  }
+  .about-list li{
+    display:flex; gap:14px; align-items:flex-start;
+    font-size:15px; color:var(--ink);
+    padding-top:16px; border-top:1px solid var(--line);
+  }
+  .about-list li .p-icon{
+    width:36px; height:36px; border-radius:50%;
+    background:var(--navy-deep); margin-top:1px;
+  }
+  .about-list li .p-icon svg{ width:16px; height:16px; }
+  .about-list li b{ color:var(--gold); font-weight:600; display:block; font-size:13px; letter-spacing:0.04em; }
+
+  /* ---------- why ---------- */
+  .why{ background:var(--ivory-dim); padding:120px 0; }
+  .why-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:22px;
+  }
+  .why-card{
+    background:var(--ivory); padding:36px 32px 34px;
+    border:1px solid var(--line);
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .why-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 40px rgba(12,31,56,0.08);
+  }
+  .why-card .p-icon{
+    width:56px; height:56px; border-radius:50%;
+    background:var(--navy-deep);
+    box-shadow:0 0 0 1px rgba(182,144,63,0.4), inset 0 0 0 5px rgba(227,198,132,0.1);
+    margin-bottom:22px;
+  }
+  .why-card .p-icon svg{ width:24px; height:24px; }
+  .why-card h3{ font-size:18px; margin-bottom:10px; }
+  .why-card p{ color:var(--slate); font-size:14.5px; }
+
+  /* ---------- team ---------- */
+  .team{ padding:120px 0; background:var(--ivory); }
+  .team .section-head{ margin-bottom:48px; }
+  .team-showcase{
+    max-width:1060px; margin:0 auto;
+  }
+  .team-exec-card{
+    background:var(--ivory-dim);
+    border:1px solid var(--line);
+    box-shadow:0 20px 48px rgba(12,31,56,0.06);
+    display:grid;
+    grid-template-columns:320px 1fr;
+    position:relative;
+    overflow:hidden;
+  }
+  .team-exec-card::before{
+    content:""; position:absolute; top:0; left:0; right:0; height:3px;
+    background:linear-gradient(90deg, var(--navy-deep) 0%, var(--gold) 50%, var(--navy-deep) 100%);
+  }
+  .team-exec-sidebar{
+    background:var(--navy-deep);
+    color:var(--ivory);
+    padding:44px 30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    border-right:1px solid rgba(227,198,132,0.18);
+    position:relative;
+  }
+  .team-exec-avatar{
+    position:relative;
+    margin-bottom:20px;
+  }
+  .team-exec-crest{
+    width:104px; height:104px;
+    border-radius:50%;
+    background:linear-gradient(135deg, #14304f 0%, #0c1f38 100%);
+    border:2px solid var(--gold);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 0 0 6px rgba(182,144,63,0.14), 0 12px 24px rgba(0,0,0,0.35);
+  }
+  .team-exec-crest svg{ width:48px; height:48px; }
+  .team-exec-badge{
+    position:absolute; bottom:-6px; left:50%; transform:translateX(-50%);
+    background:var(--gold); color:var(--navy-deep);
+    font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em;
+    padding:3px 10px; border-radius:10px; white-space:nowrap;
+    box-shadow:0 2px 6px rgba(0,0,0,0.25);
+  }
+  .team-exec-titles{ margin-bottom:24px; }
+  .team-exec-titles h3{
+    color:var(--ivory); font-size:24px; margin-bottom:6px; letter-spacing:-0.02em;
+  }
+  .team-exec-role{
+    color:var(--gold-soft); font-size:12px; font-weight:500; letter-spacing:0.12em;
+    text-transform:uppercase; line-height:1.4;
+  }
+  .team-exec-tags{
+    display:flex; flex-direction:column; gap:9px; width:100%;
+    border-top:1px solid rgba(227,198,132,0.18); padding-top:20px;
+  }
+  .team-tag{
+    display:inline-flex; align-items:center; justify-content:flex-start; gap:8px;
+    background:rgba(255,255,255,0.05); border:1px solid rgba(227,198,132,0.2);
+    padding:8px 12px; font-size:11.5px; color:#d8e0ec; text-align:left;
+    border-radius:2px; font-weight:400; transition:border-color .2s ease, background .2s ease;
+  }
+  .team-tag:hover{ background:rgba(227,198,132,0.1); border-color:var(--gold-soft); }
+  .team-tag svg{ color:var(--gold-soft); flex-shrink:0; }
+
+  .team-exec-main{
+    padding:44px 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .team-bio-lead{
+    position:relative;
+    margin-bottom:18px;
+  }
+  .team-bio-lead p{
+    color:var(--ink);
+    font-size:15px;
+    line-height:1.75;
+    font-weight:400;
+  }
+  .team-bio-body p{
+    color:var(--slate);
+    font-size:14.5px;
+    line-height:1.75;
+    margin-bottom:26px;
+  }
+  .team-highlights-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:16px;
+    padding-top:22px;
+    border-top:1px solid var(--line);
+  }
+  .team-highlight-item{
+    display:flex; gap:12px; align-items:flex-start;
+    background:rgba(255,255,255,0.7);
+    border:1px solid rgba(12,31,56,0.08);
+    padding:14px 16px;
+  }
+  .team-hl-icon{
+    width:34px; height:34px; border-radius:50%;
+    background:var(--navy-deep);
+    display:inline-flex; align-items:center; justify-content:center;
+    flex-shrink:0; margin-top:2px;
+  }
+  .team-hl-icon svg{ width:16px; height:16px; }
+  .team-highlight-item strong{
+    display:block; font-size:13px; color:var(--navy-deep); font-weight:600; margin-bottom:3px;
+  }
+  .team-highlight-item p{
+    font-size:12px; color:var(--slate); line-height:1.5; margin:0;
+  }
+
+  @media (max-width: 900px) {
+    .team-exec-card{ grid-template-columns:1fr; }
+    .team-exec-sidebar{ border-right:none; border-bottom:1px solid rgba(227,198,132,0.18); padding:36px 24px; }
+    .team-exec-main{ padding:32px 24px; }
+    .team-highlights-grid{ grid-template-columns:1fr; }
+  }
+
+  /* ---------- services ---------- */
+  .services{ padding:120px 0; }
+  .sector-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:8px;
+  }
+  .sector-card{
+    position:relative; overflow:hidden;
+    min-height:300px; background:var(--navy-deep); color:var(--ivory);
+  }
+  .sector-card img{
+    width:100%; height:100%; object-fit:cover;
+    position:absolute; inset:0;
+    opacity:0.45; transition:transform .6s ease, opacity .4s ease;
+  }
+  .sector-card:hover img{ transform:scale(1.06); opacity:0.55; }
+  .sector-card .overlay{
+    position:absolute; inset:0;
+    background:linear-gradient(to top, rgba(12,31,56,0.92) 18%, rgba(12,31,56,0.25) 100%);
+  }
+  .sector-body{
+    position:relative; z-index:1; height:100%;
+    display:flex; flex-direction:column; justify-content:flex-end;
+    padding:28px;
+  }
+  .sector-body .p-icon{
+    width:48px; height:48px; border-radius:50%;
+    background:rgba(12,31,56,0.55);
+    border:1px solid rgba(227,198,132,0.45);
+    margin-bottom:16px;
+  }
+  .sector-body .p-icon svg{ width:22px; height:22px; }
+  .sector-body h3{ color:var(--white); font-size:20px; margin-bottom:8px; }
+  .sector-body p{ color:#c8d2e0; font-size:13.5px; max-width:36ch; }
+
+  /* ---------- countries ---------- */
+  .countries{ padding:120px 0; background:var(--ivory-dim); }
+  .countries-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:start;
+  }
+  .country-list{ list-style:none; padding:0; margin:0; }
+  .country-list li{
+    display:flex; justify-content:space-between; align-items:center; gap:18px;
+    padding:18px 0; border-bottom:1px solid var(--line);
+  }
+  .country-list li .c-name{
+    display:flex; align-items:center; gap:14px;
+    font-family:'Poppins', sans-serif; font-size:17px; font-weight:500; color:var(--navy-deep);
+  }
+  .country-list li .p-icon{
+    width:38px; height:38px; border-radius:50%;
+    border:1px solid var(--gold); background:var(--navy-deep);
+  }
+  .country-list li .p-icon svg{ width:16px; height:16px; }
+  .country-list li span{
+    font-size:13px; color:var(--slate); text-align:right;
+  }
+  .map-box{
+    background:var(--navy-deep); aspect-ratio:1/0.95;
+    display:flex; align-items:center; justify-content:center; padding:30px;
+    position:relative; overflow:hidden;
+  }
+  .map-box img{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.28;
+  }
+  .map-box svg{ position:relative; z-index:1; }
+
+  /* ---------- gallery ---------- */
+  .gallery{ padding:0 0 120px; background:var(--ivory-dim); }
+  .gallery-grid{
+    display:grid; grid-template-columns:1.3fr 1fr 1fr; grid-template-rows:1fr 1fr; gap:6px;
+    min-height:560px;
+  }
+  .gallery-grid figure{ margin:0; overflow:hidden; position:relative; }
+  .gallery-grid figure:first-child{ grid-row:1 / 3; }
+  .gallery-grid img{ width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+  .gallery-grid figure:hover img{ transform:scale(1.045); }
+  .gallery-grid figcaption{
+    position:absolute; left:0; right:0; bottom:0; padding:16px 18px;
+    background:linear-gradient(to top, rgba(12,31,56,0.78), transparent);
+    color:var(--ivory); font-size:13px; font-weight:500;
+  }
+
+  /* ---------- process ---------- */
+  .process{ background:var(--navy-deep); color:var(--ivory); padding:120px 0; }
+  .process .section-head h2, .process .section-head p{ color:var(--ivory); }
+  .process .section-head p{ color:#aab6c8; }
+  .process .kicker{ color:var(--gold-soft); }
+  .steps{
+    display:grid; grid-template-columns:repeat(5,1fr); gap:1px;
+    background:rgba(246,243,236,0.14);
+    border-top:1px solid rgba(246,243,236,0.14);
+    border-bottom:1px solid rgba(246,243,236,0.14);
+  }
+  .step{ background:var(--navy-deep); padding:30px 24px 34px; }
+  .step .step-top{ display:flex; align-items:center; justify-content:space-between; }
+  .step .step-num{
+    font-family:'Poppins', sans-serif; font-size:22px; color:var(--gold-soft); font-weight:600;
+  }
+  .step .p-icon{
+    width:42px; height:42px; border-radius:50%;
+    border:1px solid rgba(227,198,132,0.5);
+    background:rgba(227,198,132,0.06);
+  }
+  .step .p-icon svg{ width:18px; height:18px; }
+  .step h4{ color:var(--ivory); font-size:16px; margin:18px 0 10px; font-weight:600; }
+  .step p{ color:#a9b4c6; font-size:13.5px; }
+
+  /* ---------- split panels ---------- */
+  .employers, .candidates{ padding:0 0 0; }
+  .employers{ padding-top:120px; }
+  .split-panel{
+    color:var(--ivory);
+    display:grid; grid-template-columns:1.1fr 0.9fr;
+    align-items:stretch;
+  }
+  .split-copy{ padding:72px 64px; background:var(--navy); }
+  .split-copy .kicker{ color:var(--gold-soft); }
+  .split-copy h2{ color:var(--white); font-size:clamp(26px,3vw,36px); max-width:16ch; }
+  .split-copy p{ color:#c3ccdb; margin-top:20px; font-size:16px; max-width:44ch; }
+  .split-copy .btn{ margin-top:30px; }
+  .split-figure{
+    min-height:420px; background:var(--navy-deep) center/cover no-repeat;
+    position:relative;
+  }
+  .split-figure::after{
+    content:""; position:absolute; inset:18px;
+    border:1px solid rgba(246,243,236,0.28); pointer-events:none;
+  }
+  .candidates .split-panel{ grid-template-columns:0.9fr 1.1fr; }
+  .candidates .split-figure{ order:-1; }
+  .candidates{ padding:8px 0 40px; }
+
+  /* ---------- dual paths ---------- */
+  .paths{ padding:40px 0 120px; }
+  .paths-grid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .path-card{
+    position:relative; overflow:hidden; min-height:460px;
+    color:var(--ivory); padding:48px 40px;
+    display:flex; flex-direction:column; justify-content:flex-end;
+  }
+  .path-card img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.42; }
+  .path-card .shade{
+    position:absolute; inset:0;
+    background:linear-gradient(to top, rgba(12,31,56,0.95) 12%, rgba(12,31,56,0.35) 100%);
+  }
+  .path-card > *:not(img):not(.shade){ position:relative; z-index:1; }
+  .path-card .kicker{ color:var(--gold-soft); }
+  .path-card h2{ color:var(--white); font-size:clamp(24px,2.8vw,32px); max-width:16ch; }
+  .path-card p{ color:#c8d2e0; margin-top:14px; max-width:42ch; font-size:15px; }
+  .path-card ul{ list-style:none; padding:0; margin:20px 0 26px; display:grid; gap:9px; }
+  .path-card li{ font-size:14px; color:#e8edf4; display:flex; align-items:center; gap:10px; }
+  .path-card li::before{ content:""; width:7px; height:7px; border-radius:50%; background:var(--gold); flex-shrink:0; }
+
+  /* ---------- ethics ---------- */
+  .ethics{
+    background:var(--navy-deep); color:var(--ivory); padding:100px 0; text-align:center;
+  }
+  .ethics h2{ color:var(--white); max-width:20ch; margin:0 auto 18px; font-size:clamp(26px,3.2vw,38px); }
+  .ethics > .wrap > p{ color:#c3ccdb; max-width:68ch; margin:0 auto 28px; font-size:16px; }
+  .ethics blockquote{
+    margin:0 auto 32px; max-width:22ch;
+    font-size:clamp(20px,2.4vw,26px); color:var(--gold-soft);
+    font-weight:500; font-style:italic; line-height:1.35;
+  }
+  .license-pill{
+    display:inline-block; border:1px solid rgba(227,198,132,0.45);
+    padding:12px 22px; letter-spacing:0.14em; font-size:11.5px;
+    text-transform:uppercase; color:var(--gold-soft); font-weight:500;
+  }
+
+  /* ---------- clients ---------- */
+  .clients{ padding:72px 0; background:var(--ivory-dim); }
+  .client-row{ display:flex; flex-wrap:wrap; gap:10px; }
+  .client-chip{
+    border:1px solid var(--line); background:var(--ivory);
+    padding:12px 16px; font-size:13px; color:var(--navy); font-weight:500;
+  }
+
+  /* ---------- compliance ---------- */
+  .compliance{ padding:120px 0; background:var(--ivory-dim); }
+  .comp-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:18px;
+  }
+  .comp-card{
+    background:var(--ivory); padding:32px 26px;
+    border:1px solid var(--line); text-align:left;
+  }
+  .comp-card .p-icon{
+    width:52px; height:52px; border-radius:50%;
+    background:var(--navy-deep); margin-bottom:20px;
+    box-shadow:0 0 0 1px rgba(182,144,63,0.35);
+  }
+  .comp-card .p-icon svg{ width:22px; height:22px; }
+  .comp-card h3{ font-size:16px; margin-bottom:8px; }
+  .comp-card p{ color:var(--slate); font-size:13.5px; }
+
+  /* ---------- testimonials ---------- */
+  .testimonials{ padding:120px 0; }
+  .t-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+  .t-card{ background:var(--ivory); padding:38px 34px; }
+  .t-card .stars{ display:flex; gap:4px; margin-bottom:18px; }
+  .t-card q{
+    display:block; font-style:italic; font-size:16.5px; font-weight:400;
+    color:var(--navy-deep); line-height:1.55; quotes:none;
+  }
+  .t-who{ margin-top:24px; font-size:13px; color:var(--slate); display:flex; gap:12px; align-items:center; }
+  .t-who img{
+    width:42px; height:42px; border-radius:50%; object-fit:cover;
+    border:1px solid var(--gold);
+  }
+  .t-who b{ color:var(--ink); display:block; font-size:14px; margin-bottom:2px; font-weight:600; }
+
+  /* ---------- faq ---------- */
+  .faq{ padding:0 0 120px; }
+  .faq-list{ display:grid; gap:0; border-top:1px solid var(--line); }
+  .faq-item{
+    border-bottom:1px solid var(--line);
+  }
+  .faq-item summary{
+    cursor:pointer; list-style:none; padding:22px 0;
+    font-weight:600; font-size:16px; color:var(--navy-deep);
+    display:flex; justify-content:space-between; align-items:center; gap:24px;
+  }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item summary .plus{
+    width:28px; height:28px; border-radius:50%;
+    border:1px solid var(--gold); color:var(--gold);
+    display:flex; align-items:center; justify-content:center;
+    font-size:18px; flex-shrink:0; transition:transform .2s ease;
+  }
+  .faq-item[open] summary .plus{ transform:rotate(45deg); }
+  .faq-item p{ color:var(--slate); font-size:15px; padding:0 48px 22px 0; max-width:68ch; }
+
+  /* ---------- cta banner ---------- */
+  .cta-band{
+    padding:90px 0; text-align:center; background:var(--gold);
+    position:relative; overflow:hidden;
+  }
+  .cta-band::before{
+    content:""; position:absolute; inset:0;
+    background:url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1600&auto=format&fit=crop') center/cover;
+    opacity:0.12;
+  }
+  .cta-band .wrap{ position:relative; z-index:1; }
+  .cta-band h2{ color:var(--navy-deep); font-size:clamp(26px,3.4vw,38px); max-width:20ch; margin:0 auto; }
+  .cta-band .btn{ margin-top:30px; }
+  .cta-band .btn-gold{ background:var(--navy-deep); color:var(--ivory); }
+  .cta-band .btn-gold:hover{ background:var(--navy); }
+
+  /* ---------- contact ---------- */
+  .contact{
+    padding:120px 0;
+    background:
+      linear-gradient(180deg, rgba(12,31,56,0.04), transparent 40%),
+      var(--ivory);
+  }
+  .contact-panel{
+    display:grid; grid-template-columns:0.9fr 1.15fr;
+    background:var(--navy-deep);
+    box-shadow:0 30px 70px rgba(12,31,56,0.18);
+    position:relative;
+  }
+  .contact-panel::before{
+    content:""; position:absolute; inset:0; pointer-events:none; z-index:2;
+    border:1px solid rgba(227,198,132,0.35);
+    margin:10px;
+  }
+  .contact-aside{
+    position:relative; z-index:1;
+    padding:56px 48px;
+    color:var(--ivory);
+    background:
+      linear-gradient(165deg, rgba(12,31,56,0.82) 20%, rgba(12,31,56,0.55) 100%),
+      url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+  }
+  .contact-aside .kicker{ color:var(--gold-soft); }
+  .contact-aside h2{ color:var(--white); font-size:clamp(26px,3vw,34px); max-width:12ch; }
+  .contact-aside > p{ color:#c3ccdb; margin-top:16px; font-size:15px; max-width:36ch; }
+  .contact-details{ list-style:none; padding:0; margin:32px 0 0; display:grid; gap:16px; }
+  .contact-details li{ font-size:14.5px; display:flex; gap:14px; align-items:flex-start; color:#d7deea; }
+  .contact-details .p-icon{
+    width:42px; height:42px; border-radius:50%;
+    background:rgba(12,31,56,0.55);
+    border:1px solid rgba(227,198,132,0.4);
+  }
+  .contact-details .p-icon svg{ width:16px; height:16px; }
+  .contact-details b{ display:block; color:var(--gold-soft); font-size:11px; margin-bottom:3px; letter-spacing:0.12em; text-transform:uppercase; font-weight:500; }
+  .contact-details a{ color:#f6f3ec; }
+  .contact-details a:hover{ color:var(--gold-soft); }
+  .contact-actions{
+    display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:32px;
+    position:relative; z-index:1;
+  }
+  .contact-actions a{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:13px 12px; font-size:11px; font-weight:600; letter-spacing:0.12em;
+    text-transform:uppercase; border-radius:1px;
+  }
+  .action-call{
+    background:var(--gold); color:var(--navy-deep);
+  }
+  .action-call:hover{ background:var(--gold-soft); }
+  .action-wa{
+    background:#128C7E; color:#fff;
+    border:1px solid rgba(227,198,132,0.25);
+  }
+  .action-wa:hover{ background:#0e7a6e; }
+
+  .contact-form{
+    position:relative; z-index:1;
+    background:var(--ivory);
+    padding:56px 48px;
+    display:grid; gap:20px;
+  }
+  .form-head{ margin-bottom:4px; }
+  .form-head h3{ font-size:22px; margin-top:6px; }
+  .form-head p{ color:var(--slate); font-size:14px; margin-top:8px; }
+  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .field{ position:relative; }
+  label{
+    font-size:11px; color:var(--navy); display:block; margin-bottom:8px;
+    font-weight:500; letter-spacing:0.12em; text-transform:uppercase;
+  }
+  input, select, textarea{
+    width:100%; border:0; border-bottom:1px solid rgba(12,31,56,0.18);
+    background:rgba(255,255,255,0.55);
+    padding:13px 14px 12px;
+    font-family:'Poppins', sans-serif; font-size:14.5px;
+    color:var(--ink); border-radius:0;
+    transition:border-color .2s ease, background .2s ease, box-shadow .2s ease;
+  }
+  select{
+    appearance:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1.5 L6 6.5 L11 1.5' stroke='%23b6903f' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat:no-repeat; background-position:right 12px center;
+    padding-right:36px;
+  }
+  input:hover, select:hover, textarea:hover{ border-bottom-color:rgba(182,144,63,0.55); }
+  input:focus, select:focus, textarea:focus{
+    border-bottom-color:var(--gold); outline:none;
+    background:#fff;
+    box-shadow:0 8px 24px rgba(12,31,56,0.05);
+  }
+  textarea{ resize:vertical; min-height:128px; }
+  .form-foot{
+    display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap;
+    padding-top:8px;
+  }
+  .form-note{ font-size:12.5px; color:var(--slate); max-width:34ch; }
+  .form-submit{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--navy-deep); color:var(--ivory);
+    border:1px solid var(--gold);
+    padding:15px 28px; font-size:12px; font-weight:600;
+    letter-spacing:0.14em; text-transform:uppercase;
+    border-radius:1px; cursor:pointer; font-family:'Poppins', sans-serif;
+    box-shadow:inset 0 1px 0 rgba(227,198,132,0.2);
+  }
+  .form-submit:hover{ background:var(--navy); }
+
+  /* ---------- side dock ---------- */
+  .side-dock{
+    position:fixed; right:22px; bottom:28px; z-index:70;
+    display:flex; flex-direction:column; gap:12px;
+  }
+  .side-btn{
+    width:56px; height:56px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    position:relative;
+    box-shadow:0 10px 28px rgba(12,31,56,0.22);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .side-btn:hover{ transform:translateY(-3px); box-shadow:0 16px 32px rgba(12,31,56,0.28); }
+  .side-btn svg{ width:24px; height:24px; display:block; }
+  .side-call{
+    background:var(--navy-deep);
+    box-shadow:0 0 0 1px var(--gold), 0 10px 28px rgba(12,31,56,0.22);
+  }
+  .side-wa{
+    background:#25D366;
+    box-shadow:0 0 0 1px rgba(227,198,132,0.55), 0 10px 28px rgba(12,31,56,0.22);
+  }
+  .side-btn span{
+    position:absolute; right:calc(100% + 12px); top:50%; transform:translateY(-50%);
+    background:var(--navy-deep); color:var(--ivory);
+    font-size:11px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase;
+    padding:8px 12px; white-space:nowrap; border-radius:1px;
+    opacity:0; pointer-events:none; transition:opacity .2s ease;
+    border:1px solid rgba(227,198,132,0.35);
+  }
+  .side-btn:hover span, .side-btn:focus-visible span{ opacity:1; }
+  @media (hover:none){
+    .side-btn span{ display:none; }
+  }
+
+  /* ---------- footer ---------- */
+  footer{ background:var(--navy-deep); color:#9aa7bb; padding:64px 0 30px; position:relative; }
+  .footer-grid{
+    display:grid; grid-template-columns:1.4fr 0.8fr 0.8fr 1fr; gap:40px;
+    padding-bottom:44px; border-bottom:1px solid rgba(246,243,236,0.12);
+  }
+  .footer-brand{
+    display:inline-flex; align-items:center;
+    background:var(--navy-deep);
+  }
+  .footer-brand img{ height:80px; width:auto; display:block; }
+  .footer-tag{ margin-top:14px; font-size:14px; color:#8895aa; max-width:34ch; }
+  
+  .footer-cert-card{
+    margin-top:20px;
+    padding:16px 18px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(227,198,132,0.24);
+    border-radius:2px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    max-width:360px;
+  }
+  .footer-cert-info{ display:flex; flex-direction:column; gap:4px; }
+  .footer-cert-heading{
+    display:flex; align-items:center; gap:8px;
+    color:var(--gold-soft); font-size:13px; font-weight:600;
+  }
+  .footer-cert-heading svg{ flex-shrink:0; }
+  .footer-cert-sub{ font-size:11.5px; color:#7e8b9e; line-height:1.4; margin:0; }
+  
+  .btn-check-cert{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    background:var(--gold); color:var(--navy-deep);
+    border:none; cursor:pointer;
+    padding:10px 18px; font-size:11.5px; font-weight:600;
+    letter-spacing:0.12em; text-transform:uppercase;
+    font-family:'Poppins', sans-serif;
+    border-radius:1px;
+    transition:background .2s ease, transform .2s ease, box-shadow .2s ease;
+    box-shadow:0 4px 14px rgba(0,0,0,0.25);
+    width:fit-content;
+  }
+  .btn-check-cert:hover{
+    background:var(--gold-soft);
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(182,144,63,0.3);
+  }
+  .btn-check-cert svg{ flex-shrink:0; }
+
+  .footer-text-btn{
+    background:none; border:none; padding:0;
+    font-family:inherit; font-size:14px; color:#9aa7bb;
+    cursor:pointer; text-align:left;
+    transition:color .2s ease;
+  }
+  .footer-text-btn:hover{ color:var(--gold-soft); }
+
+  footer h5{ color:var(--ivory); font-size:12px; margin-bottom:16px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; }
+  footer ul{ list-style:none; padding:0; margin:0; display:grid; gap:11px; }
+  footer a{ font-size:14px; color:#9aa7bb; }
+  footer a:hover{ color:var(--gold-soft); }
+  .footer-bottom{
+    display:flex; justify-content:space-between; align-items:center; padding-top:26px; font-size:13px; color:#71809a; flex-wrap:wrap; gap:12px;
+  }
+  .footer-cert-line{
+    display:inline-flex; align-items:center; gap:8px; color:var(--gold-soft); font-size:12.5px;
+  }
+  .footer-cert-line svg{ flex-shrink:0; }
+
+  /* ---------- certificate modal ---------- */
+  .cert-modal-backdrop{
+    position:fixed; inset:0; z-index:9999;
+    background:rgba(8,16,28,0.85);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    display:flex; align-items:center; justify-content:center;
+    padding:20px;
+    opacity:0; pointer-events:none;
+    transition:opacity .28s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .cert-modal-backdrop.is-open{
+    opacity:1; pointer-events:auto;
+  }
+  .cert-modal-dialog{
+    background:var(--navy-deep);
+    border:1px solid rgba(227,198,132,0.35);
+    box-shadow:0 24px 60px rgba(0,0,0,0.65), 0 0 0 1px rgba(182,144,63,0.2);
+    width:100%; max-width:760px; max-height:92vh;
+    display:flex; flex-direction:column;
+    transform:scale(0.92) translateY(16px);
+    transition:transform .3s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow:hidden;
+  }
+  .cert-modal-backdrop.is-open .cert-modal-dialog{
+    transform:scale(1) translateY(0);
+  }
+  .cert-modal-header{
+    padding:20px 24px;
+    display:flex; align-items:flex-start; justify-content:space-between; gap:16px;
+    border-bottom:1px solid rgba(227,198,132,0.2);
+    background:linear-gradient(90deg, rgba(12,31,56,1) 0%, rgba(20,48,79,1) 100%);
+  }
+  .cert-modal-tag{
+    display:inline-block;
+    color:var(--gold); font-size:10.5px; font-weight:600;
+    letter-spacing:0.16em; text-transform:uppercase; margin-bottom:4px;
+  }
+  .cert-modal-header h3{
+    color:var(--ivory); font-size:18px; margin:0 0 4px; letter-spacing:-0.02em;
+  }
+  .cert-modal-header p{
+    color:#9aa7bb; font-size:12.5px; margin:0;
+  }
+  .cert-modal-close{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(227,198,132,0.2);
+    color:var(--gold-soft);
+    width:38px; height:38px;
+    border-radius:50%;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:background .2s ease, transform .2s ease, color .2s ease;
+    flex-shrink:0;
+  }
+  .cert-modal-close:hover{
+    background:rgba(182,144,63,0.2);
+    color:var(--white);
+    transform:rotate(90deg);
+  }
+  .cert-modal-body{
+    padding:20px;
+    background:#081220;
+    overflow-y:auto;
+    display:flex; justify-content:center; align-items:center;
+  }
+  .cert-image-wrap{
+    width:100%;
+    display:flex; justify-content:center;
+  }
+  .cert-modal-img{
+    max-width:100%;
+    max-height:62vh;
+    object-fit:contain;
+    border:1px solid rgba(227,198,132,0.25);
+    box-shadow:0 12px 32px rgba(0,0,0,0.5);
+    border-radius:2px;
+  }
+  .cert-modal-footer{
+    padding:16px 24px;
+    border-top:1px solid rgba(227,198,132,0.18);
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    background:var(--navy-deep);
+    flex-wrap:wrap;
+  }
+  .cert-modal-meta{
+    color:#8895aa; font-size:12px;
+  }
+  .cert-modal-actions{
+    display:flex; align-items:center; gap:10px;
+  }
+  .cert-action-btn{
+    display:inline-flex; align-items:center; gap:6px;
+    padding:8px 16px; font-size:11.5px; font-weight:600;
+    letter-spacing:0.1em; text-transform:uppercase;
+    border-radius:1px; cursor:pointer; font-family:'Poppins', sans-serif;
+    transition:all .2s ease;
+  }
+  .cert-action-view{
+    background:var(--gold); color:var(--navy-deep); border:none;
+  }
+  .cert-action-view:hover{ background:var(--gold-soft); color:var(--navy-deep); }
+  .cert-action-close{
+    background:transparent; border:1px solid rgba(227,198,132,0.3); color:var(--ivory);
+  }
+  .cert-action-close:hover{
+    background:rgba(255,255,255,0.06); border-color:var(--gold-soft); color:var(--gold-soft);
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:1180px) and (min-width:921px){
+    .nav-links{ gap:18px; }
+    .header-cred{ display:none; }
+  }
+  @media (max-width:920px){
+    .header-top-inner, .nav{ padding-left:24px; padding-right:24px; }
+    .header-cred{ display:none; }
+    .header-meta .header-hide-sm{ display:none; }
+    .nav{ padding-top:12px; padding-bottom:12px; }
+    .nav-links{
+      position:fixed; top:104px; left:0; right:0; bottom:0; height:auto;
+      background:var(--navy-deep);
+      flex-direction:column; padding:36px 32px 48px; gap:22px; align-items:flex-start;
+      font-size:14px; letter-spacing:0.16em;
+      transform:translateX(100%); transition:transform .3s ease;
+      border-top:1px solid rgba(227,198,132,0.22);
+    }
+    .nav-links.open{ transform:translateX(0); }
+    .nav-toggle{ display:flex; }
+    .nav-cta{ width:auto; }
+    .hero-inner{ grid-template-columns:1fr; }
+    .hero-panel{ border-left:none; padding-left:0; border-top:1px solid rgba(246,243,236,0.18); padding-top:36px; }
+    .badges-row, .stats-grid, .why-grid, .comp-grid{ grid-template-columns:1fr 1fr; }
+    .stat{ border-left:none !important; border-top:1px solid rgba(246,243,236,0.14); padding-left:0; }
+    .section-head{ grid-template-columns:1fr; gap:20px; }
+    .about-grid, .countries-grid, .contact-panel, .split-panel, .candidates .split-panel{ grid-template-columns:1fr; }
+    .contact-aside, .contact-form{ padding:40px 24px; }
+    .contact-actions{ grid-template-columns:1fr; }
+    .side-dock{ right:14px; bottom:16px; }
+    .side-btn{ width:50px; height:50px; }
+    .candidates .split-figure{ order:0; }
+    .split-figure{ min-height:240px; }
+    .split-copy{ padding:48px 28px; }
+    .steps{ grid-template-columns:1fr 1fr; }
+    .t-grid{ grid-template-columns:1fr; }
+    .sector-grid, .paths-grid{ grid-template-columns:1fr 1fr; }
+    .sector-card{ min-height:260px; }
+    .path-card{ min-height:400px; }
+    .gallery-grid{ grid-template-columns:1fr 1fr; min-height:auto; }
+    .gallery-grid figure:first-child{ grid-row:auto; min-height:280px; }
+    .form-row{ grid-template-columns:1fr; }
+    .wrap, .nav, .hero-inner, .stats-grid, .badges-row{ padding-left:24px; padding-right:24px; }
+  }
+  @media (max-width:560px){
+    .badges-row, .stats-grid, .why-grid, .comp-grid, .steps, .gallery-grid, .sector-grid, .paths-grid, .team-grid{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <div class="header-meta">
+        <a href="tel:+916396794303">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h3.2l1.3 3.2-2 1.2a12 12 0 0 0 6.6 6.6l1.2-2 3.2 1.3V17c0 1.1-.9 2-2.1 1.8C10.2 17.5 6.5 13.8 5.2 6.6 5 5.4 5.9 4.5 7 4.5z"/></svg>
+          +91 63967 94303
+        </a>
+        <span class="header-sep" aria-hidden="true"></span>
+        <a href="mailto:info@ishthaoverseas.in" class="header-hide-sm">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 8l9 6 9-6"/></svg>
+          info@ishthaoverseas.in
+        </a>
+        <span class="header-sep header-hide-sm" aria-hidden="true"></span>
+        <span class="header-hide-sm">Khatima · Uttarakhand</span>
+      </div>
+      <div class="header-cred">MEA · PGE licensed recruitment desk</div>
+    </div>
+  </div>
+  <div class="nav">
+    <a href="#top" class="brand">
+      <img src="logo.svg" alt="Ishtha Overseas">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#services">Services</a>
+      <a href="#countries">Destinations</a>
+      <a href="#employers">Hire Staff</a>
+      <a href="#candidates">Apply</a>
+      <a href="#contact" class="nav-cta">Enquire Now</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><rect width="18" height="1.4" y="0" fill="#e3c684"/><rect y="6.3" width="18" height="1.4" fill="#e3c684"/><rect y="12.6" width="12" height="1.4" fill="#e3c684"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div>
+        <p class="hero-eyebrow">Your trusted partner in international recruitment &amp; training</p>
+        <h1>Find, hire and place India's talent worldwide.</h1>
+        <p class="hero-sub">Ishtha Overseas is an India-based overseas recruitment desk. We source, screen, document and deploy skilled, semi-skilled and hospitality professionals from across India to hotels, sites and facilities in the Gulf, Middle East and further afield.</p>
+        <div class="hero-actions">
+          <a href="#employers" class="btn btn-gold">
+            <span class="p-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7h8M8 12h5"/><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 16h16"/></svg></span>
+            Hire skilled staff
+          </a>
+          <a href="#candidates" class="btn btn-outline">
+            <span class="p-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20c2-7 6-11 10-12"/><path d="M14 4l7 3-3 7"/><path d="M14 4c1 4 4 7 8 8"/></svg></span>
+            Apply for a job
+          </a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <p class="hero-panel-label">Active deployment corridors</p>
+        <svg class="route-line" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 150 C 90 40, 140 40, 300 30" stroke="#b6903f" stroke-width="1.2" stroke-dasharray="1 6" stroke-linecap="round"/>
+          <path d="M20 150 C 80 130, 160 150, 300 70" stroke="#3a5578" stroke-width="1.2" stroke-dasharray="1 6" stroke-linecap="round"/>
+          <path d="M20 150 C 60 90, 220 60, 300 120" stroke="#3a5578" stroke-width="1.2" stroke-dasharray="1 6" stroke-linecap="round"/>
+          <circle cx="20" cy="150" r="4" fill="#f6f3ec"/>
+          <circle cx="300" cy="30" r="3.5" fill="#e3c684"/>
+          <circle cx="300" cy="70" r="3.5" fill="#e3c684"/>
+          <circle cx="300" cy="120" r="3.5" fill="#e3c684"/>
+          <text x="4" y="168" fill="#c8d2e0" font-size="11" font-family="Poppins, sans-serif">India</text>
+          <text x="262" y="24" fill="#c8d2e0" font-size="11" font-family="Poppins, sans-serif">UAE</text>
+          <text x="255" y="64" fill="#c8d2e0" font-size="11" font-family="Poppins, sans-serif">Qatar</text>
+          <text x="248" y="134" fill="#c8d2e0" font-size="11" font-family="Poppins, sans-serif">Saudi Arabia</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section class="badges">
+    <div class="badges-row">
+      <div class="badge">
+        <span class="p-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <div><b>MEA / PGE aligned</b><span>Overseas recruitment under Indian law</span></div>
+      </div>
+      <div class="badge">
+        <span class="p-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 3 3.8 6 3.8 9s-1.3 6-3.8 9c-2.5-3-3.8-6-3.8-9S9.5 6 12 3z"/></svg>
+        </span>
+        <div><b>Gulf &amp; beyond</b><span>UAE, KSA, Qatar, Africa &amp; Europe</span></div>
+      </div>
+      <div class="badge">
+        <span class="p-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+        </span>
+        <div><b>Ethical placements</b><span>Safe, legal, transparent contracts</span></div>
+      </div>
+      <div class="badge">
+        <span class="p-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.2"/><path d="M21 18.5c-.4-2.4-2-3.8-4-3.8"/></svg>
+        </span>
+        <div><b>India-wide database</b><span>Chefs, trades, nurses &amp; crews</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div class="stat"><b id="statYears">0</b><span>Years</span></div>
+      <div class="stat"><b id="statPlaced">0</b><span>Placements</span></div>
+      <div class="stat"><b id="statServices">0</b><span>Service desks</span></div>
+      <div class="stat"><b id="statCountries">0</b><span>Countries serviced</span></div>
+      <div class="stat"><b id="statTeam">0</b><span>Founder</span></div>
+      <div class="stat"><b id="statDatabase">0</b><span>Candidate database</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-frame">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Recruitment consultants reviewing candidate documentation">
+      </div>
+      <div class="about-copy">
+        <p class="kicker">Welcome to Ishtha Overseas</p>
+        <h2 style="margin-bottom:22px; font-size:clamp(26px,3vw,34px);">A Government of India–aligned overseas recruitment desk, built for hotels, sites and facilities abroad.</h2>
+        <p>Ishtha Overseas is an India-based recruitment and manpower company focused on placing qualified Indian professionals with employers overseas. We work in the manner expected of a Ministry of External Affairs / Protector General of Emigrants recruitment desk — licensed process, written contracts, and no informal side payments.</p>
+        <p>From Khatima, Uttarakhand we source chefs, hotel and restaurant teams, construction trades, nurses, technicians and facility staff from across India, then handle screening, documentation and deployment into the Gulf, the wider Middle East, and selected corridors in Africa and Europe.</p>
+        <p>Consultants specialise by sector, not by volume, so a shortlist matches the employer's actual site, wage structure and contract length — the same standard luxury hotel groups and EPC contractors expect from a long-term recruitment partner.</p>
+        <ul class="about-list">
+          <li>
+            <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/><path d="M9 11h4M11 9v4"/></svg></span>
+            <div><b>Sourcing</b> Sector-specific candidate pipelines across India's key labour markets.</div>
+          </li>
+          <li>
+            <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <div><b>Compliance</b> Documentation aligned to destination-country labour and visa requirements.</div>
+          </li>
+          <li>
+            <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18c0-3.5 3.6-6 8-6s8 2.5 8 6"/><circle cx="12" cy="8" r="3.2"/><path d="M19 8h2M20 7v2"/></svg></span>
+            <div><b>Aftercare</b> Pre-departure briefings and a point of contact once deployed.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ISHTHA -->
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Why Ishtha</p>
+          <h2>The difference is in the desk, not the brochure.</h2>
+        </div>
+        <p>Premium placement is quiet work: the right trade test, a clean file, and a shortlist that survives the first week on site.</p>
+      </div>
+      <div class="why-grid">
+        <article class="why-card">
+          <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V8l8-4 8 4v12"/><path d="M9 20v-6h6v6"/><path d="M4 20h16"/></svg></span>
+          <h3>Sector desks, not generalists</h3>
+          <p>Each mandate is owned by consultants who already know the trade tests, licences and site realities of that industry.</p>
+        </article>
+        <article class="why-card">
+          <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="1.5"/><circle cx="12" cy="16.5" r="1"/><path d="M10 7h4"/></svg></span>
+          <h3>Files that clear first time</h3>
+          <p>Visa, medical and contract packs are assembled against destination rules before they ever leave our office.</p>
+        </article>
+        <article class="why-card">
+          <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg></span>
+          <h3>Timelines you can plan around</h3>
+          <p>Mobilisation calendars are shared with both employer and candidate, so nothing sits unexplained in a queue.</p>
+        </article>
+        <article class="why-card">
+          <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 11V8a4 4 0 1 1 8 0v3"/><rect x="5" y="11" width="14" height="10" rx="1.5"/><path d="M12 15v2"/></svg></span>
+          <h3>Verified, not just listed</h3>
+          <p>Identity, experience and trade credentials are checked before an employer spends an interview hour.</p>
+        </article>
+        <article class="why-card">
+          <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M7 19V8l5-3 5 3v11"/><path d="M10 19v-5h4v5"/></svg></span>
+          <h3>On-ground India network</h3>
+          <p>Sourcing runs through trade clusters and prior deployments — not a single open advertisement.</p>
+        </article>
+        <article class="why-card">
+          <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.2 4.6L19 8.3l-3.5 3.5.8 4.8L12 14.8 7.7 16.6l.8-4.8L5 8.3l4.8-.7L12 3z"/></svg></span>
+          <h3>Held to a placement standard</h3>
+          <p>We measure success by people still on contract after month three — not by how many CVs left the building.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Our leadership</p>
+          <h2>Decades of luxury hospitality &amp; global recruitment mastery.</h2>
+        </div>
+        <p>Ishtha Overseas is steered with first-hand luxury hospitality and international recruitment expertise — ensuring candidates and employers meet world-class standards.</p>
+      </div>
+
+      <div class="team-showcase">
+        <article class="team-exec-card">
+          <div class="team-exec-sidebar">
+            <div class="team-exec-avatar">
+              <div class="team-exec-crest" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="3.4"/>
+                  <path d="M5.2 19.2c.9-3.6 3.7-5.5 6.8-5.5s5.9 1.9 6.8 5.5"/>
+                </svg>
+              </div>
+              <span class="team-exec-badge">Leadership</span>
+            </div>
+            
+            <div class="team-exec-titles">
+              <h3>Ankur Oli</h3>
+              <p class="team-exec-role">Co-Founder, Ishtha Overseas</p>
+            </div>
+
+            <div class="team-exec-tags">
+              <span class="team-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                13+ Yrs Luxury &amp; Cruises
+              </span>
+              <span class="team-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                5+ Yrs Global Recruitment
+              </span>
+              <span class="team-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                B.Sc. Hospitality &amp; MBA
+              </span>
+              <span class="team-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A8 8 0 0 1 12 4a8 8 0 0 1 6 9.87M8.5 17h7M10 20h4"/></svg>
+                Ex-Fine Dining GM
+              </span>
+            </div>
+          </div>
+
+          <div class="team-exec-main">
+            <div class="team-bio-lead">
+              <p>Ankur Oli, the visionary Co-Founder of Ishtha Overseas, brings over 13 years of rich Indian and international experience in luxury hotels and cruise lines. A dynamic leader in hospitality management, he has honed his expertise in food and beverage operations, excelling in roles that span from management to leadership. Ankur's academic journey includes a B.Sc. in Hospitality Management (CTT) and an MBA, equipping him with a strong foundation in both the operational and strategic aspects of the industry. His illustrious career includes serving as General Manager for a renowned fine-dining restaurant, where he demonstrated exceptional skill in delivering world-class dining experiences.</p>
+            </div>
+
+            <div class="team-bio-body">
+              <p>Over the last 5 years, Ankur has specialized in training and recruitment, building deep expertise in sourcing, training, and placing hospitality talent for hotels across India and overseas. His hands-on experience with hotel recruitment and staff training has given him a sharp understanding of what hotels need from their workforce — and what candidates need to succeed in the industry. With his wealth of experience and passion for excellence, Ankur Oli is committed to nurturing future hospitality leaders through Ishtha Overseas.</p>
+            </div>
+
+            <div class="team-highlights-grid">
+              <div class="team-highlight-item">
+                <span class="team-hl-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3l2-4h14l2 4"/><path d="M5 21V10.85M19 21V10.85M9 21v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/></svg>
+                </span>
+                <div>
+                  <strong>Luxury &amp; Cruise Operations</strong>
+                  <p>13+ years across prestigious international hotel chains and luxury cruise lines.</p>
+                </div>
+              </div>
+
+              <div class="team-highlight-item">
+                <span class="team-hl-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+                </span>
+                <div>
+                  <strong>Talent Sourcing &amp; Training</strong>
+                  <p>5+ years specialized in overseas placements, rigorous screening and candidate readiness.</p>
+                </div>
+              </div>
+
+              <div class="team-highlight-item">
+                <span class="team-hl-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+                </span>
+                <div>
+                  <strong>Operational &amp; Strategic Foundation</strong>
+                  <p>Equipped with a B.Sc. in Hospitality Management (CTT) and an MBA.</p>
+                </div>
+              </div>
+
+              <div class="team-highlight-item">
+                <span class="team-hl-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                </span>
+                <div>
+                  <strong>Nurturing Future Leaders</strong>
+                  <p>Sharp insight into luxury hospitality staffing demands and candidate success.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Our services</p>
+          <h2>We recruit chefs, hospitality, trade and facility staff from all over India.</h2>
+        </div>
+        <p>Placements into hotels, restaurants, catering operations, construction sites, hospitals and industrial camps — each desk knows the trade tests and licensing of that industry.</p>
+      </div>
+      <div class="sector-grid">
+        <article class="sector-card">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1200&auto=format&fit=crop" alt="Chef preparing food in a professional kitchen">
+          <div class="overlay"></div>
+          <div class="sector-body">
+            <h3>Chef Recruitment</h3>
+            <p>Commis to executive chefs, Indian, continental and Arabic kitchens — trade-tested before interview.</p>
+          </div>
+        </article>
+        <article class="sector-card">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop" alt="Luxury hotel exterior">
+          <div class="overlay"></div>
+          <div class="sector-body">
+            <h3>Hotel Manning</h3>
+            <p>Front office, housekeeping, F&amp;B service and kitchen brigades for hotels, resorts and pre-openings.</p>
+          </div>
+        </article>
+        <article class="sector-card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Restaurant dining room">
+          <div class="overlay"></div>
+          <div class="sector-body">
+            <h3>Restaurant Team</h3>
+            <p>Wait staff, captains, bartenders and kitchen hands for fine dining and casual restaurant groups.</p>
+          </div>
+        </article>
+        <article class="sector-card">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop" alt="Restaurant service counter">
+          <div class="overlay"></div>
+          <div class="sector-body">
+            <h3>QSR / Fast Food</h3>
+            <p>Counter, kitchen and shift-lead staff for quick-service and coffee brands with high-volume rosters.</p>
+          </div>
+        </article>
+        <article class="sector-card">
+          <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1200&auto=format&fit=crop" alt="Catering service">
+          <div class="overlay"></div>
+          <div class="sector-body">
+            <h3>Catering &amp; Facilities</h3>
+            <p>Camp catering, flight kitchens, banquet crews and facility-management teams for remote and city sites.</p>
+          </div>
+        </article>
+        <article class="sector-card">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop" alt="Construction site with workers and cranes">
+          <div class="overlay"></div>
+          <div class="sector-body">
+            <h3>Construction &amp; Infrastructure</h3>
+            <p>Masons, steel fixers, welders, riggers, electricians and site supervisors, trade-tested to destination standards.</p>
+          </div>
+        </article>
+        <article class="sector-card">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop" alt="Healthcare professional at work">
+          <div class="overlay"></div>
+          <div class="sector-body">
+            <h3>Healthcare &amp; Nursing</h3>
+            <p>Registered nurses, care assistants and allied health staff, with credentials verified before interview.</p>
+          </div>
+        </article>
+        <article class="sector-card">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1400&auto=format&fit=crop" alt="Industrial energy facility">
+          <div class="overlay"></div>
+          <div class="sector-body">
+            <h3>Oil, Gas &amp; Engineering</h3>
+            <p>Technicians, fabricators, instrumentation and maintenance crews for energy and industrial contracts.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTRIES -->
+  <section class="countries" id="countries">
+    <div class="wrap countries-grid">
+      <div>
+        <p class="kicker">Destinations we serve</p>
+        <h2 style="font-size:clamp(26px,3vw,34px); margin-bottom:28px; max-width:16ch;">We place Indian talent in the Gulf, Middle East, Africa and selected European markets.</h2>
+        <ul class="country-list">
+          <li>
+            <span class="c-name">
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.2"/></svg></span>
+              United Arab Emirates
+            </span>
+            <span>Hotels · Construction · QSR</span>
+          </li>
+          <li>
+            <span class="c-name">
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.2"/></svg></span>
+              Saudi Arabia
+            </span>
+            <span>Construction · Facilities</span>
+          </li>
+          <li>
+            <span class="c-name">
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.2"/></svg></span>
+              Qatar
+            </span>
+            <span>Infrastructure · Oil &amp; Gas</span>
+          </li>
+          <li>
+            <span class="c-name">
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.2"/></svg></span>
+              Kuwait
+            </span>
+            <span>Domestic · Facilities</span>
+          </li>
+          <li>
+            <span class="c-name">
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.2"/></svg></span>
+              Oman
+            </span>
+            <span>Construction · Engineering</span>
+          </li>
+          <li>
+            <span class="c-name">
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.2"/></svg></span>
+              Bahrain
+            </span>
+            <span>Hospitality · Healthcare</span>
+          </li>
+          <li>
+            <span class="c-name">
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.2"/></svg></span>
+              Europe &amp; Africa
+            </span>
+            <span>Hospitality · Catering</span>
+          </li>
+        </ul>
+      </div>
+      <div class="map-box">
+        <img src="https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?q=80&w=1200&auto=format&fit=crop" alt="">
+        <svg width="100%" viewBox="0 0 280 260" fill="none">
+          <circle cx="140" cy="130" r="110" stroke="#e3c684" stroke-width="0.6" stroke-dasharray="2 5"/>
+          <circle cx="140" cy="130" r="75" stroke="#e3c684" stroke-width="0.6" stroke-dasharray="2 5"/>
+          <circle cx="140" cy="130" r="4" fill="#e3c684"/>
+          <path d="M140 130 L 90 60" stroke="#f6f3ec" stroke-width="0.8"/>
+          <path d="M140 130 L 200 55" stroke="#f6f3ec" stroke-width="0.8"/>
+          <path d="M140 130 L 205 110" stroke="#f6f3ec" stroke-width="0.8"/>
+          <path d="M140 130 L 175 195" stroke="#f6f3ec" stroke-width="0.8"/>
+          <path d="M140 130 L 85 190" stroke="#f6f3ec" stroke-width="0.8"/>
+          <path d="M140 130 L 60 130" stroke="#f6f3ec" stroke-width="0.8"/>
+          <circle cx="90" cy="60" r="2.4" fill="#f6f3ec"/>
+          <circle cx="200" cy="55" r="2.4" fill="#f6f3ec"/>
+          <circle cx="205" cy="110" r="2.4" fill="#f6f3ec"/>
+          <circle cx="175" cy="195" r="2.4" fill="#f6f3ec"/>
+          <circle cx="85" cy="190" r="2.4" fill="#f6f3ec"/>
+          <circle cx="60" cy="130" r="2.4" fill="#f6f3ec"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">On the ground</p>
+          <h2>From interview room to boarding gate.</h2>
+        </div>
+        <p>Placement is a sequence of rooms, sites and terminals. These are the environments our candidates and employers actually work in.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop" alt="Construction crew on a high-rise site">
+          <figcaption>Infrastructure crews, Gulf sites</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=900&auto=format&fit=crop" alt="Professional interview in an office">
+          <figcaption>Employer interviews</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=900&auto=format&fit=crop" alt="Hotel lobby interior">
+          <figcaption>Hospitality placements</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=900&auto=format&fit=crop" alt="Aircraft wing above clouds">
+          <figcaption>Deployment travel</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=900&auto=format&fit=crop" alt="Business handshake after an agreement">
+          <figcaption>Partner mandates</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">How a placement moves</p>
+          <h2>From registration to deployment, five stages, tracked start to finish.</h2>
+        </div>
+        <p>Candidates and employers can check status at any stage — nothing sits unexplained in a queue.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-top">
+            <span class="step-num">01</span>
+            <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h5"/><circle cx="16.5" cy="16.5" r="1.5"/></svg></span>
+          </div>
+          <h4>Register</h4>
+          <p>Candidate submits trade documents and work history; employer shares the role and site brief.</p>
+        </div>
+        <div class="step">
+          <div class="step-top">
+            <span class="step-num">02</span>
+            <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/><path d="M9 11h4"/></svg></span>
+          </div>
+          <h4>Screening</h4>
+          <p>Trade tests, document verification and shortlist review against the role's actual requirements.</p>
+        </div>
+        <div class="step">
+          <div class="step-top">
+            <span class="step-num">03</span>
+            <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M8 10h.01M12 10h4"/><circle cx="12" cy="12" r="9" opacity="0"/></svg></span>
+          </div>
+          <h4>Interview</h4>
+          <p>Employer interviews shortlisted candidates directly, in person or by video.</p>
+        </div>
+        <div class="step">
+          <div class="step-top">
+            <span class="step-num">04</span>
+            <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h8l5 5v13H7V3z"/><path d="M15 3v5h5"/><path d="M10 13h6M10 17h4"/></svg></span>
+          </div>
+          <h4>Documentation</h4>
+          <p>Offer letter, contract, medical clearance and visa paperwork filed and tracked.</p>
+        </div>
+        <div class="step">
+          <div class="step-top">
+            <span class="step-num">05</span>
+            <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20c2-7 6-11 10-12"/><path d="M14 4l7 3-3 7"/><path d="M14 4c1 4 4 7 8 8"/></svg></span>
+          </div>
+          <h4>Deployment</h4>
+          <p>Pre-departure briefing, travel arrangements, and a contact on file once the candidate arrives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPLOYERS -->
+  <section class="employers" id="employers">
+    <div class="wrap">
+      <div class="split-panel">
+        <div class="split-copy">
+          <p class="kicker">Find the right staff</p>
+          <h2>Your global partner in hospitality, trade and facility recruitment.</h2>
+          <p>We specialise in permanent placements: find, hire and manage Indian chefs, hotel teams, construction crews and facility staff. Single hires or bulk mobilisation — every name you see has already cleared document checks.</p>
+          <a href="#contact" class="btn btn-gold">
+            <span class="p-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+            Hire skilled staff
+          </a>
+        </div>
+        <div class="split-figure" style="background-image:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop');"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANDIDATES -->
+  <section class="candidates" id="candidates">
+    <div class="wrap">
+      <div class="split-panel">
+        <div class="split-copy">
+          <p class="kicker">Find the right job</p>
+          <h2>A new world of opportunities — matched to your skill and preferred location.</h2>
+          <p>Chefs, hotel staff, nurses, electricians and facility teams: register once, and a consultant walks you through screening, interview and paperwork. Quick response, named hand-holding, and a live employer mandate before you travel.</p>
+          <a href="#contact" class="btn btn-gold">
+            <span class="p-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5 19c.8-3.4 3.5-5.2 7-5.2s6.2 1.8 7 5.2"/></svg></span>
+            Apply for a job
+          </a>
+        </div>
+        <div class="split-figure" style="background-image:url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200&auto=format&fit=crop');"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DUAL PATHS -->
+  <section class="paths" id="paths">
+    <div class="wrap">
+      <div class="paths-grid">
+        <article class="path-card">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop" alt="Employers reviewing a shortlist">
+          <div class="shade"></div>
+          <p class="kicker">For employers</p>
+          <h2>Find the right staff, fast and reliable.</h2>
+          <p>Permanent placements tailored to your property, site or kitchen — from a single chef to a full pre-opening brigade.</p>
+          <ul>
+            <li>Trade-tested shortlists</li>
+            <li>Bulk mobilisation calendars</li>
+            <li>Visa and medical tracking</li>
+            <li>A named consultant after arrival</li>
+          </ul>
+          <a href="#contact" class="btn btn-gold">Hire skilled staff</a>
+        </article>
+        <article class="path-card">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop" alt="Candidate in a professional interview">
+          <div class="shade"></div>
+          <p class="kicker">For job seekers</p>
+          <h2>Find the hospitality or trade job that fits.</h2>
+          <p>A new world of opportunities — with paperwork explained at every stage, not left to guesswork.</p>
+          <ul>
+            <li>Quick response</li>
+            <li>Hand-holding through documents</li>
+            <li>Get work overseas on a live mandate</li>
+            <li>Top-brand hotel and site partners</li>
+          </ul>
+          <a href="#contact" class="btn btn-gold">Apply for a job</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE -->
+  <section class="compliance" id="compliance">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Compliance &amp; care</p>
+          <h2>The unglamorous work that keeps a placement legal.</h2>
+        </div>
+        <p>Overseas hiring fails on paperwork more often than on skill. Our desk is built around destination labour rules, medicals and contract transparency.</p>
+      </div>
+      <div class="comp-grid">
+        <article class="comp-card">
+          <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="1.5"/><circle cx="12" cy="16.5" r="1"/><path d="M10 8h4"/></svg></span>
+          <h3>Passport &amp; identity</h3>
+          <p>Originals checked against digital copies so names, dates and numbers match every downstream form.</p>
+        </article>
+        <article class="comp-card">
+          <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>Visa &amp; labour cards</h3>
+          <p>Packs assembled to the destination country's current labour and immigration checklist.</p>
+        </article>
+        <article class="comp-card">
+          <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h4l2-5 4 10 2-5h4"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <h3>Medical clearance</h3>
+          <p>Fit-to-work medicals scheduled and tracked so travel is not held at the last hour.</p>
+        </article>
+        <article class="comp-card">
+          <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7h8M8 12h8M8 17h5"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg></span>
+          <h3>Contract clarity</h3>
+          <p>Role, wage, overtime and accommodation terms are read with the candidate before they sign.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETHICS -->
+  <section class="ethics" id="ethics">
+    <div class="wrap">
+      <p class="kicker">Statutory &amp; ethical</p>
+      <h2>Our commitment to safe, legal and ethical recruitment</h2>
+      <p>Ishtha Overseas is structured as an overseas recruitment desk aligned to the Government of India, Ministry of External Affairs and the Office of the Protector General of Emigrants. We promote safe, legal placement of Indian nationals — written contracts, destination-country labour rules, and a point of contact after arrival.</p>
+      <blockquote>Migration is an expression of the human aspiration for dignity, safety and a better future.</blockquote>
+      <span class="license-pill">License number displayed on issue · Khatima, Uttarakhand</span>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">What partners say</p>
+          <h2>Trusted by employers and candidates alike.</h2>
+        </div>
+      </div>
+      <div class="t-grid">
+        <div class="t-card">
+          <div class="stars" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+          </div>
+          <q>Ishtha has been our recruitment consultant for overseas hotel manning. The desk is professional, the database is relevant, and I have not faced major hassles across repeat mandates.</q>
+          <div class="t-who">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" alt="">
+            <div><b>Human Resources Manager</b>Resort group, UAE</div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="stars" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+          </div>
+          <q>Good database of chefs and F&amp;B staff, flexible on our interview windows, and clean paperwork before the first ticket was booked.</q>
+          <div class="t-who">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" alt="">
+            <div><b>Assistant HR Manager</b>City hotel, Dubai</div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="stars" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#b6903f"><path d="M12 3l2.4 5.2 5.6.7-4.2 3.9 1.1 5.6L12 16.2 7.1 18.4l1.1-5.6L4 9l5.6-.7L12 3z"/></svg>
+          </div>
+          <q>They mobilised catering and support crews for our remote-site contract on the dates we gave them — no retesting on arrival.</q>
+          <div class="t-who">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="">
+            <div><b>Project HR Lead</b>Catering &amp; facilities contractor, KSA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section class="clients" id="clients">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Who we staff for</p>
+          <h2>A partner desk for hotels, kitchens, sites and camps.</h2>
+        </div>
+        <p>The same categories of employer that long-standing Indian overseas agencies serve — luxury hotels, QSR groups, caterers, EPC contractors and facility managers.</p>
+      </div>
+      <div class="client-row">
+        <span class="client-chip">Luxury hotel groups</span>
+        <span class="client-chip">Resort pre-openings</span>
+        <span class="client-chip">QSR &amp; coffee brands</span>
+        <span class="client-chip">Flight &amp; camp catering</span>
+        <span class="client-chip">Facility management</span>
+        <span class="client-chip">EPC &amp; infrastructure</span>
+        <span class="client-chip">Hospitals &amp; clinics</span>
+        <span class="client-chip">Energy &amp; industrial</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Questions, answered</p>
+          <h2>What employers and candidates usually ask first.</h2>
+        </div>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>How long does a typical deployment take?<span class="plus">+</span></summary>
+          <p>Once a shortlist is accepted, documentation and visa timelines depend on the destination. Gulf corridors commonly move in a matter of weeks when medicals and contracts are complete. We share a stage-by-stage calendar at the start of every mandate.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you charge candidates a placement fee?<span class="plus">+</span></summary>
+          <p>We work within India's overseas recruitment rules. Any permitted costs are explained in writing before a candidate proceeds — there are no informal side payments at the desk.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can you mobilise in bulk for a project ramp-up?<span class="plus">+</span></summary>
+          <p>Yes. Construction, facilities and hospitality mandates regularly include staggered batches. Screening, interviews and ticketing are scheduled against your site access dates rather than a single dump of CVs.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Which documents should a candidate keep ready?<span class="plus">+</span></summary>
+          <p>A valid passport, trade certificates, recent photographs, experience letters and, where relevant, prior Gulf visas or medical reports. Our consultants will list destination-specific extras after registration.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Our consultants are ready to help you hire quality staff — or find the right job abroad.</h2>
+      <a href="#contact" class="btn btn-gold">Enquire now</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-panel">
+        <aside class="contact-aside">
+          <p class="kicker">Get in touch</p>
+          <h2>Start a hiring brief or a candidate application.</h2>
+          <p>Share a few details and a consultant from the relevant sector desk will respond within one working day.</p>
+          <ul class="contact-details">
+            <li>
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.2"/></svg></span>
+              <div><b>Office</b>Khatima, Uttarakhand, 262308</div>
+            </li>
+            <li>
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h3.2l1.3 3.2-2 1.2a12 12 0 0 0 6.6 6.6l1.2-2 3.2 1.3V17c0 1.1-.9 2-2.1 1.8C10.2 17.5 6.5 13.8 5.2 6.6 5 5.4 5.9 4.5 7 4.5z"/></svg></span>
+              <div><b>Call</b><a href="tel:+916396794303">+91 63967 94303</a></div>
+            </li>
+            <li>
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#e3c684"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.53 3.69-8.21 8.24-8.21 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c-.01 4.54-3.7 8.2-8.22 8.2zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14 0-.31-.01-.47-.01s-.43.06-.66.31c-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.28z"/></svg></span>
+              <div><b>WhatsApp</b><a href="https://wa.me/916396794303" target="_blank" rel="noopener">Chat with a consultant</a></div>
+            </li>
+            <li>
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 8l9 6 9-6"/></svg></span>
+              <div><b>Email</b><a href="mailto:info@ishthaoverseas.in">info@ishthaoverseas.in</a></div>
+            </li>
+            <li>
+              <span class="p-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg></span>
+              <div><b>Hours</b>Monday–Saturday, 10:00–19:00 IST</div>
+            </li>
+          </ul>
+          <div class="contact-actions">
+            <a class="action-call" href="tel:+916396794303">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h3.2l1.3 3.2-2 1.2a12 12 0 0 0 6.6 6.6l1.2-2 3.2 1.3V17c0 1.1-.9 2-2.1 1.8C10.2 17.5 6.5 13.8 5.2 6.6 5 5.4 5.9 4.5 7 4.5z"/></svg>
+              Call now
+            </a>
+            <a class="action-wa" href="https://wa.me/916396794303" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.53 3.69-8.21 8.24-8.21 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c-.01 4.54-3.7 8.2-8.22 8.2z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </aside>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-head">
+            <p class="kicker">Enquiry desk</p>
+            <h3>Tell us how we should reach you.</h3>
+            <p>Employers and candidates use the same form — the sector desk routes it.</p>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone / WhatsApp</label>
+              <input id="phone" name="phone" type="tel" placeholder="+91 " required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="name@company.com">
+            </div>
+            <div class="field">
+              <label for="type">I am an</label>
+              <select id="type" name="type">
+                <option>Employer looking to hire</option>
+                <option>Candidate seeking work abroad</option>
+                <option>Other enquiry</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="sector">Sector</label>
+            <select id="sector" name="sector">
+              <option>Chef / Kitchen</option>
+              <option>Hotel Manning</option>
+              <option>Restaurant / QSR</option>
+              <option>Catering &amp; Facilities</option>
+              <option>Construction &amp; Infrastructure</option>
+              <option>Healthcare &amp; Nursing</option>
+              <option>Oil, Gas &amp; Engineering</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">Brief</label>
+            <textarea id="msg" name="message" placeholder="Role, site location and headcount — or your trade and years of experience."></textarea>
+          </div>
+          <div class="form-foot">
+            <p class="form-note">A consultant replies within one working day. No informal side payments at this desk.</p>
+            <button type="submit" class="form-submit">
+              Send enquiry
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="footer-brand"><img src="logo.svg" alt="Ishtha Overseas"></a>
+        <p class="footer-tag">Overseas recruitment of Indian hospitality, trade and facility staff for employers in the Gulf, Middle East, Africa and Europe.</p>
+        
+        <div class="footer-cert-card">
+          <div class="footer-cert-info">
+            <div class="footer-cert-heading">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+              <span>Certified by Ministry of External Affairs</span>
+            </div>
+            <p class="footer-cert-sub">Government of India · PGE Approved Overseas Recruitment Desk</p>
+          </div>
+          <button type="button" class="btn-check-cert" id="checkCertBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+            Check Certificate
+          </button>
+        </div>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#team">Our team</a></li>
+          <li><a href="#services">Our services</a></li>
+          <li><a href="#ethics">Ethical recruitment</a></li>
+          <li><button type="button" class="footer-text-btn" id="checkCertLink">Check Certificate (MEA)</button></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Chef recruitment</a></li>
+          <li><a href="#services">Hotel manning</a></li>
+          <li><a href="#services">Catering &amp; facilities</a></li>
+          <li><a href="#candidates">Apply for a job</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:info@ishthaoverseas.in">info@ishthaoverseas.in</a></li>
+          <li><a href="tel:+916396794303">+91 63967 94303</a></li>
+          <li><a href="https://wa.me/916396794303" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Ishtha Overseas. All rights reserved.</span>
+      <span class="footer-cert-line">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        Certified by Ministry of External Affairs (Govt. of India) · Khatima, Uttarakhand
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- CERTIFICATE MODAL -->
+<div class="cert-modal-backdrop" id="certModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+  <div class="cert-modal-dialog">
+    <div class="cert-modal-header">
+      <div>
+        <span class="cert-modal-tag">Official Certification</span>
+        <h3 id="certModalTitle">Certified by Ministry of External Affairs</h3>
+        <p>Government of India — Overseas Recruitment Registration</p>
+      </div>
+      <button type="button" class="cert-modal-close" id="closeCertBtn" aria-label="Close certificate modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="cert-modal-body">
+      <div class="cert-image-wrap">
+        <img src="certificate.png" alt="Ishtha Overseas Ministry of External Affairs Certificate" class="cert-modal-img" loading="lazy">
+      </div>
+    </div>
+    <div class="cert-modal-footer">
+      <span class="cert-modal-meta">Ishtha Overseas · Licensed &amp; Verified Manpower Desk</span>
+      <div class="cert-modal-actions">
+        <a href="certificate.png" target="_blank" rel="noopener" class="cert-action-btn cert-action-view">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Open Full Image
+        </a>
+        <button type="button" class="cert-action-btn cert-action-close" id="certDismissBtn">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="side-dock" aria-label="Quick contact">
+  <a class="side-btn side-call" href="tel:+916396794303" aria-label="Call Ishtha Overseas">
+    <span>Call us</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="#e3c684" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h3.2l1.3 3.2-2 1.2a12 12 0 0 0 6.6 6.6l1.2-2 3.2 1.3V17c0 1.1-.9 2-2.1 1.8C10.2 17.5 6.5 13.8 5.2 6.6 5 5.4 5.9 4.5 7 4.5z"/></svg>
+  </a>
+  <a class="side-btn side-wa" href="https://wa.me/916396794303" target="_blank" rel="noopener" aria-label="WhatsApp Ishtha Overseas">
+    <span>WhatsApp</span>
+    <svg viewBox="0 0 24 24" fill="#fff"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.53 3.69-8.21 8.24-8.21 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c-.01 4.54-3.7 8.2-8.22 8.2zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14 0-.31-.01-.47-.01s-.43.06-.66.31c-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+  </a>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const siteHeader = document.getElementById('siteHeader');
+  const onScroll = () => siteHeader.classList.toggle('is-scrolled', window.scrollY > 8);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // Certificate Modal Handlers
+  const certModal = document.getElementById('certModal');
+  const checkCertBtn = document.getElementById('checkCertBtn');
+  const checkCertLink = document.getElementById('checkCertLink');
+  const closeCertBtn = document.getElementById('closeCertBtn');
+  const certDismissBtn = document.getElementById('certDismissBtn');
+
+  function openCertificateModal() {
+    if (!certModal) return;
+    certModal.classList.add('is-open');
+    certModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCertificateModal() {
+    if (!certModal) return;
+    certModal.classList.remove('is-open');
+    certModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (checkCertBtn) checkCertBtn.addEventListener('click', openCertificateModal);
+  if (checkCertLink) checkCertLink.addEventListener('click', openCertificateModal);
+  if (closeCertBtn) closeCertBtn.addEventListener('click', closeCertificateModal);
+  if (certDismissBtn) certDismissBtn.addEventListener('click', closeCertificateModal);
+
+  if (certModal) {
+    certModal.addEventListener('click', (e) => {
+      if (e.target === certModal) closeCertificateModal();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && certModal && certModal.classList.contains('is-open')) {
+      closeCertificateModal();
+    }
+  });
+
+  const counters = [
+    { el: document.getElementById('statYears'), target: 15, suffix: '+' },
+    { el: document.getElementById('statPlaced'), target: 8500, suffix: '+' },
+    { el: document.getElementById('statServices'), target: 8, suffix: '' },
+    { el: document.getElementById('statCountries'), target: 12, suffix: '+' },
+    { el: document.getElementById('statTeam'), target: 1, suffix: '' },
+    { el: document.getElementById('statDatabase'), target: 25, suffix: 'k+' }
+  ];
+  let animated = false;
+  function animateCounters(){
+    if (animated) return;
+    animated = true;
+    counters.forEach(c => {
+      const dur = 1400;
+      const start = performance.now();
+      function tick(now){
+        const p = Math.min((now - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        c.el.textContent = Math.round(eased * c.target).toLocaleString() + c.suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+  const statsSection = document.querySelector('.stats');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) animateCounters(); });
+  }, { threshold: 0.4 });
+  io.observe(statsSection);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ishtha Overseas">
+  <defs>
+    <linearGradient id="wordmarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d8eef2"/>
+      <stop offset="55%" stop-color="#9fd4de"/>
+      <stop offset="100%" stop-color="#e3c684"/>
+    </linearGradient>
+    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a648"/>
+      <stop offset="100%" stop-color="#e8cf8a"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef3ef"/>
+    </radialGradient>
+  </defs>
+
+  <g transform="translate(450,145)">
+    <g stroke="url(#petalGrad)" stroke-width="2.2" fill="none" opacity="0.9">
+      <g id="petalGroup">
+        <ellipse cx="0" cy="-58" rx="34" ry="58"/>
+      </g>
+      <use href="#petalGroup" transform="rotate(36)"/>
+      <use href="#petalGroup" transform="rotate(72)"/>
+      <use href="#petalGroup" transform="rotate(108)"/>
+      <use href="#petalGroup" transform="rotate(144)"/>
+      <use href="#petalGroup" transform="rotate(180)"/>
+      <use href="#petalGroup" transform="rotate(216)"/>
+      <use href="#petalGroup" transform="rotate(252)"/>
+      <use href="#petalGroup" transform="rotate(288)"/>
+      <use href="#petalGroup" transform="rotate(324)"/>
+    </g>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#d9c489" stroke-width="1" opacity="0.5"/>
+    <circle cx="0" cy="0" r="30" fill="url(#centerGlow)" stroke="#c9a648" stroke-width="1.5"/>
+    <text x="0" y="7" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#0f4c5c" letter-spacing="1">IO</text>
+  </g>
+
+  <text x="450" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="92" font-weight="600" fill="url(#wordmarkGrad)" letter-spacing="10">ISHTHA</text>
+
+  <g stroke="#c9a648" stroke-width="1.4" opacity="0.85">
+    <line x1="250" y1="370" x2="370" y2="370"/>
+    <line x1="530" y1="370" x2="650" y2="370"/>
+  </g>
+  <circle cx="450" cy="370" r="3.5" fill="#c9a648"/>
+
+  <text x="450" y="400" text-anchor="middle" font-family="'Trebuchet MS', Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#e3c684" letter-spacing="9">OVERSEAS</text>
+</svg>
